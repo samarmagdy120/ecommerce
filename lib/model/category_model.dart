@@ -8,7 +8,7 @@ class CategoryModel {
     // if (map == null) {
     //   return;
     // }
-    name = map['name'];
+    name = map!['name'];
     image = map['image'];
   }
 
