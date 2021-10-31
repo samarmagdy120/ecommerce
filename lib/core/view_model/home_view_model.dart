@@ -20,7 +20,7 @@ getCategories() async{
     categoryCollectionRef.get().then(
             (value) {
                 for(int i = 0; i < value.docs.length ; i++){
-                    categoryModel.add(CategoryModel.fromJson(value.docs[i].data()));
+                    categoryModel!.add(CategoryModel.fromJson(value.docs[i].data()) as Map<dynamic,dynamic>);
                 }
             }
     );
